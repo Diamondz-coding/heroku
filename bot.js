@@ -29,61 +29,7 @@ bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(' ');
 
     switch(args[0]){
-        case 'play':
-
-        function play(connection, message){
-            var server = server[message.guild.id];
-
-            server.dispatcher = connection.play(Stream)(ytdl(server.queue[0], {filter: "audioonly"}))
-
-        server.queue.shift();
-
-
-server.dispatcher.on("end", function(){
-    if(server.queue[0]){
-        play(connection, message);
-    }else {
-        connection.disconnect();
-    }
-});
-
-
-
-
-
-        }
-
-
-
-
-            if(!args[1]){
-                message.reply("You Need To Provide A Link!");
-                return;
-
-            }
-            if(!message.member.voiceChannel){
-                message.reply("You Must Be In A Channel To Play Music!")
-                return;
-            }
-
-            if(!servers[message.guild.id]) servers[message,guild.id] = {
-                queue: []
-            }
-
-            var server = servers[message.guild.id];
-
-            server.queue.push(args[1]);
-
-
-            if(!message.guild.voiceConnection) message.member.voiceChannel.join().then(function(connection){
-                play(connection, message);
-
-
-            })
-
-
-
-
+  
          case  'about':
             message.reply("Hi, I'm Wadia V3 Created By Diamondz! Type '?help' For A List Of Commands! ")
                 break;
