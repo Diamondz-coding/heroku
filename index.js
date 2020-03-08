@@ -194,4 +194,4 @@ bot.on('message', message=>{
 
 
 
-bot.login("Njg2MzM2OTgyMzc2NjQ0NjI2.XmVvng.61vJYzxjhmPeGlxxYV_AuysSjkE");
+bot.login(token);
