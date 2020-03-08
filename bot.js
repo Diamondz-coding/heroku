@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const ytdl = require("ytdl-core")
+
 
 
 
@@ -18,7 +18,7 @@ const token = 'NjgzNjc1NTY3NzQ0NDgzNTgw.XmTdFQ.LKJeM8SsC-1V-esjVGhdboQ7aMY';
 
 var PREFIX = '?';
 
-var servers = {};
+
 
 bot.on('ready', () =>{
     console.log('This Bot Is Online!')
@@ -29,7 +29,7 @@ bot.on('message', message=>{
     let args = message.content.substring(PREFIX.length).split(' ');
 
     switch(args[0]){
-  
+
          case  'about':
             message.reply("Hi, I'm Wadia V3 Created By Diamondz! Type '?help' For A List Of Commands! ")
                 break;
