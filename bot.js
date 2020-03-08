@@ -14,7 +14,7 @@ const bot = new Discord.Client();
 
 
 
-const token = 'NjgzNjc1NTY3NzQ0NDgzNTgw.XmVqJw.w8vg_aAQx2XDDQAvvBq8MHIj1T4';
+const token = 'NjgzNjEyOTk4NDU1MTMyMTcx.XmVrTQ.NsGcPRrLLOMubMlhd9cAl5xsH1o';
 
 var PREFIX = '?';
 
